@@ -23,6 +23,19 @@ void input() {
 	cout << "n\__________________" << endl;
 
 	for (int i = 0; i < n; i++)
-	
+
+	{		
+		cout << "<" << (i + 1) << "<";
+		cin >> arr[i];
+	}
+}
+//swap the element at index x with the element at index y
+void swap(int x, int y )
+{
+	int temp;
+	temp = arr[x];
+	arr[x] = arr[y];
+	arr[y] = temp;
 
 }
+
