@@ -83,10 +83,20 @@ void display() {
 
 	for (int i = 0; i < n; i++)
 	{
-
+		cout << arr[i] << " ";
 	}
-		
+	cout << "\n\nNumber of comparasions: " << cmp_count << endl;
+	cout << "\n\nNumber of movement: " << mov_count << endl;		
+}
+ 
+int main() {
+	input();
+	q__sort(0, n - 1);
+	display();
+	system("pause");
+	return 0;
 
 }
+
 
 
