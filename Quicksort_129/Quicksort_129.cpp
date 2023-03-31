@@ -38,4 +38,11 @@ void swap(int x, int y )
 	arr[y] = temp; 
 
 }
+void q__sort(int low, int high)
+{
+	int pivot, i j;
+	if (low > high)
+		return;
+
+}
 
