@@ -21,6 +21,8 @@ void input() {
 	cout << "n\__________________" << endl;
 	cout << "n\Enter array element" << endl;
 	cout << "n\__________________" << endl;
+
+	for (int i = 0; i < n; i++)
 	
 
 }
