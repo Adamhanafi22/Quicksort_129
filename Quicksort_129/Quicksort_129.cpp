@@ -40,7 +40,7 @@ void swap(int x, int y )
 }
 void q__sort(int low, int high)
 {
-	int pivot, i j;
+	int pivot, i, j;
 	if (low > high) //Langkah 1
 		return;
 
@@ -63,9 +63,29 @@ void q__sort(int low, int high)
 			cmp_count++;
 
 		}
+		cmp_count++;
+		if (i < j)
+
+		{
+			swap(i, j);
+			mov_count++;
+
+		}
+		q__sort(low, j - 1);
+		q__sort(j + 1, high);
 
 	}
+}
+void display() {
+	cout << "n\_______________" << endl;
+	cout << "n\sorted array" << endl;
+	cout << "n\______________" << endl;
 
+	for (int i = 0; i < n; i++)
+	{
+
+	}
+		
 
 }
 
