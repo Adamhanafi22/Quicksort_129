@@ -41,8 +41,32 @@ void swap(int x, int y )
 void q__sort(int low, int high)
 {
 	int pivot, i j;
-	if (low > high)
+	if (low > high) //Langkah 1
 		return;
 
+	i = low + 1; //langkah 3
+	j = high; // langkah 4
+	pivot = arr[low];//langkah 2
+	
+	while (i <= j)
+	{
+		while ((arr[i] <= pivot) && (i <= high))
+		{
+			i++;
+			cmp_count++;
+
+		}
+		cmp_count++;
+		while ((arr[j] > pivot) && (j >= low))
+		{
+			j--;
+			cmp_count++;
+
+		}
+
+	}
+
+
 }
+
 
